@@ -4,7 +4,7 @@ class Elevador(BaseImage):
     def __init__(self,x,y):
         self._x=x
         self._y=y
-        self._file = 'elevador.png'
+        self._file = './assets/img/elevador.png'
 
     @property
     def x(self):
@@ -21,7 +21,7 @@ class Botao(BaseImage):
         self._elevador=Elevador(450,300)
         self._c1=False
         self._t=0
-        self._file='botao.png'
+        self._file = './assets/img/botao.png'
         
     def uptade(self):
         if self._c1 is True:

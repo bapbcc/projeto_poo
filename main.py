@@ -1,6 +1,6 @@
 from tupy import *
-from personagem import Personagem
-from botao import Botao
+from modules.personagem import Personagem
+from modules.botao import Botao
 
 class botao1(Botao):
     def __init__(self,x,y,boy,girl):
@@ -30,7 +30,7 @@ class watergirl(Personagem):
 
 class plataforma(BaseImage):
     def __init__(self,x,y):
-        self._file = 'plataforma.png'
+        self._file = './assets/img/plataforma.png'
         self._x = x
         self._y = y
 

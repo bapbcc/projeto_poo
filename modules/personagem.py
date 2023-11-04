@@ -47,8 +47,8 @@ class Personagem(BaseImage):
             self._l1 = ["w", "a", "d"]
         self._x = x
         self._y = y
-        self._direcao="frente"
-        self._contador=Contador(7)
+        self._direcao = "frente"
+        self._contador = Contador(7)
         self._quadro: int=0
 
     @property
@@ -95,7 +95,7 @@ class Personagem(BaseImage):
 
     def atualiza_imagem(self):
         nome = self._direcao.value
-        self._file = f'{self._tipo}{nome}{self._quadro}.png'
+        self._file = f'./assets/img/{self._elemento}{self._tipo}/{self._tipo}{nome}{self._quadro}.png'
 
     def atualiza_posicao(self, velocidade):
         self._x += velocidade.x
